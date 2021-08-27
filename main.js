@@ -1661,9 +1661,20 @@ let datos = [
     }
 ]
 
-datos.sort(function (a, b) {
-    return a.category.localeCompare(b.category);
+// generic comparison function
+const cmp = function (x, y) {
+    return x > y ? 1 : x < y ? -1 : 0;
+};
+
+// --- Order data json
+data.sort(function (a, b) {
+    //return a.category.localeCompare(b.category);
+    return cmp(
+        [cmp(a.category, b.category), cmp(a.subcategory, b.subcategory)],
+        [cmp(b.category, a.category), cmp(b.subcategory, a.subcategory)]
+    );
 });
+
 // --- Se construye una llave unica para segmentar la infomación
 const customdata = []
 
