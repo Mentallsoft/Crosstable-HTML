@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pivot table</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script data-require="d3@*" data-semver="3.2.2" src="//cdnjs.cloudflare.com/ajax/libs/d3/3.2.2/d3.v3.min.js"></script>
+</head>
+
+<body>
+
+    <h1>Pivot table</h1>
+
+    <div>
+        <table id="pivottable">
+            <thead>
+                <tr>
+                    <td colspan="2">_</td>
+                    <td rowspan="2">2019</td>
+                    <td rowspan="2">2020</td>
+                    <td rowspan="2">2021</td>
+                </tr>
+                <tr>
+                    <td>Pais</td>
+                    <td>Ciudad</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2">Colombia</td>
+                    <td>Cali</td>
+                    <td>50</td>
+                    <td>40</td>
+                    <td>60</td>
+                </tr>
+                <tr>
+                    <td>Bogotá</td>
+                    <td>50</td>
+                    <td>40</td>
+                    <td>60</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">España</td>
+                    <td>Madrid</td>
+                    <td>50</td>
+                    <td>40</td>
+                    <td>60</td>
+                </tr>
+                <tr>
+                    <td>Barcelona</td>
+                    <td>50</td>
+                    <td>40</td>
+                    <td>60</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h1>Otro resultado</h1>
+    <table id="pivotTableContainer"></table>
+
+    <script type="module" src="./main.js"></script>
+</body>
+
+</html>

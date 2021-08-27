@@ -1,0 +1,12 @@
+#pivottable, th, td{
+    border: black 1px solid;
+    border-collapse: collapse;
+}
+
+tbody tr:nth-child(even){
+    background-color: gainsboro;
+}
+
+thead{
+    background-color: salmon;
+}
