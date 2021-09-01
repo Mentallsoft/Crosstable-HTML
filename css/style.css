@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+}
+
+#fullContainer {
+    overflow: scroll;
+    overflow-x: auto;
+    width: auto;
+}
+
+#pivotTableContainer {
+    background-color: white;
+    width: auto;
+}
+
+#pivotTableContainer, tr, td, th {
+    border-collapse: collapse;
+}
+
+#pivotTableContainer tbody tr:nth-child(even) {
+    background-color: rgb(228, 228, 228);
+}
+
+#pivotTableContainer tbody tr:hover {
+    background-color: darkgrey;
+}
+
+#pivotTableContainer thead {
+    border-bottom: 1px solid rgb(216, 216, 216);
+}
+
+#pivotTableContainer thead th {
+    color: gray;
+}
+
+#pivotTableContainer .category {
+    background-color: white;
+    border-bottom: 1px solid whitesmoke;
+}
+
+#pivotTableContainer .category:hover {
+    background-color: darkgrey;
+}
+
+.category, .subcategory {
+    text-align: left;
+    min-width: 200px;
+}
+
+tbody .subcategory {
+    border-right: 1px solid rgb(216, 216, 216);
+}
+
+.value {
+    text-align: right;
+    min-width: 100px;
+}
